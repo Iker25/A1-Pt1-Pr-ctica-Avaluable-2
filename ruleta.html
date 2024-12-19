@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta de Noms</title>
+    <link rel="stylesheet" href="ruleta.css">
+</head>
+<body>
+    <h1>Ruleta de Noms 🎯</h1>
+    <button id="loadNames">Carregar Noms</button>
+    <button id="spinButton">Gira la Ruleta</button>
+    <canvas id="wheelCanvas" width="500" height="500"></canvas>
+    <p id="selectedName">Nombre ganador: </p>
+
+    <!-- Sons -->
+    <audio id="spinSound" src="sounds/spin.mp3"></audio>
+    <audio id="winSound" src="sounds/win.mp3"></audio>
+
+    <script src="ruleta.js"></script>
+</body>
+</html>

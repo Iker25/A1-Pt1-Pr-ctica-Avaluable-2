@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .clock-container {
+    text-align: center;
+  }
+  
+  .digital-clock {
+    font-size: 4rem;
+    margin: 20px 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form label {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  form input, form select, form button {
+    font-size: 1rem;
+    margin: 5px 0;
+    padding: 5px 10px;
+  }
+  
+  form button {
+    background-color: orange;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: darkorange;
+  }
+  

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rellotge Temporitzador</title>
+  <link rel="stylesheet" href="reloj.css">
+</head>
+<body>
+  <div class="clock-container">
+    <h1>Alarma</h1>
+    <div id="current-time" class="digital-clock"></div>
+    
+    <form id="timer-form">
+      <label for="alarm-time">Hora exacte de finalització:</label>
+      <input type="time" id="alarm-time">
+      
+      <label for="countdown-duration">Durada (HH:MM:SS):</label>
+      <input type="text" id="countdown-duration" placeholder="01:15:00">
+      
+      <label for="sound-selector">Escollir so:</label>
+      <select id="sound-selector">
+        <option value="sounds/campana.mp3">Campanes</option>
+        <option value="sounds/beep.mp3">Beep</option>
+        <option value="sounds/trompeta.mp3">Trompeta</option>        
+      </select>
+      
+      <button type="button" id="start-timer">Inicia Temporitzador</button>
+      <button type="button" id="stop-timer">Desactiva</button>
+    </form>
+    
+    <div id="countdown" class="digital-clock"></div>
+  </div>
+  
+  <audio id="alarm-sound"></audio>
+  <script src="reloj.js"></script>
+</body>
+</html>
